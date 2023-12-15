@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mohamed</a>
+        <nav class="navigation">
+            <a href="#Services" class="nav-link_smoothScroll">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#Formation">Formation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <h1>Formulaire</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <td><label for="firstName">Prénom :</label></td>
+                <td><input type="text" id="firstName" name="firstName" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Nom :</label></td>
+                <td><input type="text" id="lastName" name="lastName" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail :</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message :</label></td>
+                <td><textarea id="message" name="message" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="submitForm()">Soumettre</button></td>
+            </tr>
+        </table>
+
+        <p id="result"></p>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
